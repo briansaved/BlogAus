@@ -1,3 +1,7 @@
+/* import Other CSS styling files first */
+
+@import "css/tablet";
+
 body {
   margin: 0;
   padding: 1.5rem;
