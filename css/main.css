@@ -1,6 +1,7 @@
 /* import Other CSS styling files first */
 
-@import "css/tablet";
+@import "css/tablet.css";
+@import "css/blog.css";
 
 body {
   margin: 0;
