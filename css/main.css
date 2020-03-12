@@ -50,6 +50,13 @@ section article .card {
   padding: 1rem;
   background: #e6e6e6;
   text-align: center;
+  border-radius: 10px;
+}
+
+.card-icon {
+  border-radius: 30px;
+  height: 50%;
+  width: 50%;
 }
 
 footer {
