@@ -3,15 +3,18 @@
 @import "css/tablet.css";
 @import "css/blog.css";
 
+/* reset all the body margin and set backhground and padding */
+
 body {
   margin: 0;
   padding: 1.5rem;
   background: #e6e6e6;
 }
 
+/* Full with menu items for mobile devixes and set theme colour */
+
 .navigation {
   width: 100%;
-
   background: #2d38b4;
   color: #ffffff;
   margin: 0;
@@ -19,17 +22,10 @@ body {
 }
 
 .nav-container {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-
-  width: 100%;
   padding: 0;
-  margin: 0;
 }
 
+/* make border lines on the mobile menu and center*/
 .link {
   border-bottom: 1px solid #888888;
   width: 100%;
@@ -38,11 +34,15 @@ body {
   padding: 1rem;
 }
 
+/* make the article container a flex container & allow wrapping for auto responsiveness */
+
 main section article {
   display: flex;
   flex-wrap: wrap;
-  background: /*#999999;*/ #ffffff;
+  background: #ffffff;
 }
+
+/* make each card a flex item as well to arrange content in it better */
 
 section article .card {
   flex: 1 0 350px;
@@ -51,13 +51,19 @@ section article .card {
   background: #e6e6e6;
   text-align: center;
   border-radius: 10px;
+  box-shadow: 5px 5px 18px #888888;
 }
+
+/* put a border radius on the card icons/pictures */
 
 .card-icon {
   border-radius: 30px;
   height: 50%;
   width: 50%;
 }
+
+/* make footer a flex container to control the widgets better
+staying consistent with the theme colour */
 
 footer {
   display: flex;
@@ -69,10 +75,14 @@ footer {
   align-items: center;
 }
 
+/* remove list styles in footer menu */
+
 footer ul {
   list-style: none;
   padding: 0.5rem;
 }
+
+/* center content */
 
 footer li {
   padding: 0.5rem;
@@ -84,4 +94,14 @@ footer div {
   justify-self: center;
   text-align: center;
   padding: 1rem;
+}
+
+/*main section article .blog1 Circle Image*/
+.frame {
+  background: url("../images/grayscale-photography-of-sea-3560136.jpg")
+    no-repeat;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  margin: auto;
 }
