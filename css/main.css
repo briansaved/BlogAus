@@ -32,6 +32,7 @@ body {
   box-sizing: border-box;
   text-align: center;
   padding: 1rem;
+  list-style-type: none;
 }
 
 /* make the article container a flex container & allow wrapping for auto responsiveness */
@@ -51,7 +52,13 @@ section article .card {
   background: #e6e6e6;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 5px 5px 18px #888888;
+  box-shadow: 5px 5px 10px 2px #888888;
+}
+
+section article .card:hover {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  transition: 0.3s;
 }
 
 /* put a border radius on the card icons/pictures */
@@ -98,10 +105,35 @@ footer div {
 
 /*main section article .blog1 Circle Image*/
 .frame {
-  background: url("../images/grayscale-photography-of-sea-3560136.jpg")
-    no-repeat;
-  width: 130px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
   margin: auto;
+}
+
+.frame1 {
+  background: url("../images/grayscale-photography-of-sea-3560136.jpg")
+    no-repeat;
+}
+
+.frame2 {
+  background: url("../images/orange-vehicle-on-brown-sand-1553962.jpg")
+    no-repeat;
+}
+
+.frame3 {
+  background: url("../images/paintings-in-side-room-1839919.jpg") no-repeat;
+}
+
+.frame4 {
+  background: url("../images/photo-of-woman-reading-book-3747468.jpg") no-repeat;
+}
+
+.frame5 {
+  background: url("../images/woman-in-one-piece-swimsuit-3722151.jpg") no-repeat;
+}
+
+.frame6 {
+  background: url("../images/woman-sitting-on-window-reading-book-2228561.jpg")
+    no-repeat;
 }
