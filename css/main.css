@@ -1,7 +1,7 @@
 /* import Other CSS styling files first */
 
-@import "css/tablet.css";
-@import "css/blog.css";
+@import "tablet.css";
+@import "blog.css";
 
 /* reset all the body margin and set backhground and padding */
 

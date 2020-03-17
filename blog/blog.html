@@ -3,23 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="blog/blog.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <title>Blog</title>
   </head>
-  <body>
-    <header></header>
-    <aside>
+  <body id="blog-body">
+    <header class="blog-header">
+      <nav class="navigation blog-navigation">
+        <ul class="nav-container blog-nav-container">
+          <li class="home link blog-home-link">X</li>
+          <li class="blog link blog-blog-link">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="contact link blog-contact-link">Contact</li>
+          <li class="subscribe link blog-subscribe-link">Subscribe</li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="blog-aside">
       <div class="archive">
-        <h2>Blog Archive</h2>
+        <strong>Blog Archive</strong>
         <ul>
-          <li class="archive-list">Cars 2020</li>
-          <li class="archive-list">Angular 2</li>
-          <li class="archive-list">Redux</li>
-          <li class="archive-list">Bootstrap</li>
-          <li class="archive-list">React</li>
+          <li class="archive-list"><a href="#">Cars 2020</a></li>
+          <li class="archive-list"><a href="#">Angular 2</a></li>
+          <li class="archive-list"><a href="#">Redux</a></li>
+          <li class="archive-list"><a href="#">Bootstrap</a></li>
+          <li class="archive-list"><a href="#">React</a></li>
         </ul>
       </div>
-      <div class="blog-links">
+      <!-- <div class="blog-links">
         <nav class="blog-nav">
           <ul class="blog-nav-container">
             <li class="hamburger blog-link">X</li>
@@ -30,16 +41,17 @@
             <li class="subs-blog blog-link">Subscribe</li>
           </ul>
         </nav>
-      </div>
+      </div> -->
     </aside>
-    <main>
+    <main class="blog-main">
       <article class="story">
-        <h2>My Road To Career Change</h2>
+        <h1><u>How I Changed my Career</u></h1>
+        <h2>My Road To A Career Change</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum
-          quibusdam asperiores incidunt nobis sequi facere odio commodi modi
-          debitis aliquid ipsum quo quis, quod temporibus inventore delectus
-          porro ipsam!
+          quibusdam asperiores <b>incidunt nobis</b> sequi facere odio commodi
+          modi debitis aliquid ipsum quo quis, quod temporibus inventore
+          delectus porro ipsam!
         </p>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
@@ -47,11 +59,12 @@
           architecto aut voluptas nam? Iste, officia libero dicta excepturi
           eveniet ab eaque.
         </p>
+        <h3>The Challenges I faced</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-          blanditiis ullam aliquam tempora harum reiciendis fuga rem fugiat
-          consequatur, tenetur facilis ea, sint quisquam fugit atque nobis
-          dignissimos eos. Repudiandae.
+          Lorem ipsum dolor sit <em> amet consectetur </em>adipisicing elit.
+          Amet blanditiis ullam aliquam tempora harum reiciendis fuga rem fugiat
+          consequatur, tenetur facilis ea, <i>sint</i> quisquam fugit atque
+          nobis dignissimos eos. Repudiandae.
         </p>
         <blockquote>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
@@ -65,16 +78,30 @@
       </article>
     </main>
     <section class="quotes">
+      <h3>Quote of the Day</h3>
       <blockquote>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam
         consectetur ullam? Quae officia tenetur alias commodi aspernatur dolor
         deserunt!
       </blockquote>
+      <cite>Lorem, ipsum dolor.</cite>
     </section>
-    <footer>
-      <p>Author: Brian Chidarikire</p>
-      <address>Lorem ipsum dolor sit amet consectetur.</address>
-      <p>copyright &copy; Wonai Media 2020</p>
+    <footer class="blog-footer">
+      <div class="author-info">
+        <p>Author: Brian Chidarikire</p>
+        <address>Lorem ipsum dolor sit amet consectetur.</address>
+      </div>
+      <div class="author-bio">
+        <img
+          src="../images/authoravatar.jpg"
+          alt="Image of Author"
+          class="avatar"
+        />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Necessitatibus sequi architecto nobis laboriosam incidunt. Assumenda?
+        </p>
+      </div>
     </footer>
   </body>
 </html>

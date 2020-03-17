@@ -1,0 +1,50 @@
+#blog-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  gap: 10px;
+}
+
+* {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: #582c2c;
+}
+
+.blog-header,
+.blog-aside,
+.blog-main,
+.quotes {
+  border: 1px solid #444;
+}
+
+.quotes {
+  text-align: center;
+  margin: auto;
+}
+
+.archive ul {
+  list-style: none;
+}
+
+.blog-header,
+.blog-footer {
+  grid-column: 1/-1;
+}
+
+/* Archive links to display a bit lower on mobile media */
+.blog-aside {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+
+.avatar {
+  width: 50px;
+  height: 60px;
+  border-radius: 8px;
+}
