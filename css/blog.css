@@ -1,3 +1,4 @@
+/* Set Grid Layout */
 #blog-body {
   display: grid;
   grid-template-columns: 1fr;
@@ -5,10 +6,12 @@
   gap: 10px;
 }
 
+/* remove link underlines */
 * {
   text-decoration: none;
 }
 
+/* set headings color */
 h1,
 h2,
 h3,
@@ -20,18 +23,21 @@ strong {
 .blog-aside,
 .blog-main,
 .quotes {
-  border: 1px solid #444;
+  /* border: 1px solid #444; */
+  box-shadow: lightgray 1px 5px 5px;
 }
 
 .quotes {
   text-align: center;
-  margin: auto;
+  /* margin: auto; */
 }
 
+/* remove list style */
 .archive ul {
   list-style: none;
 }
 
+/* make header and footer span all columns */
 .blog-header,
 .blog-footer {
   grid-column: 1/-1;
@@ -43,6 +49,7 @@ strong {
   grid-row: 3/4;
 }
 
+/* set avatar appearance */
 .avatar {
   width: 50px;
   height: 60px;
