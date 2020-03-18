@@ -1,2 +1,33 @@
-@media screen (min-width: 768px) and (max-width: 900px) {
+@media only screen and (min-width: 561px) and (max-width: 768px) {
+  /* Set the Body as a grid container for Phablets 561px to ipads 768px */
+  /* fr units to make it responsive rows auto to make responsive too */
+  body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+  }
+
+  /* make header footer full width and make the articles container full width too */
+  .index-header,
+  footer,
+  .index-main {
+    grid-column: 1/-1;
+  }
+
+  /* make articles container a grid container to position the cards the way we want */
+  .index-main .index-section .index-articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(80px, auto);
+  }
+
+  /* make odd cards take the first column */
+  .card:nth-child(odd) {
+    grid-column: 1/2;
+  }
+
+  /* make the even cards take the second column */
+  .card:nth-child(even) {
+    grid-column: 2/-1;
+  }
 }

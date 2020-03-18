@@ -1,10 +1,9 @@
 /* import Other CSS styling files first */
 
-@import "tablet.css";
 @import "blog.css";
-
+@import "tablet.css" screen and (min-width: 561px) and (max-width: 768px);
+@import "desktops.css" screen and (min-width: 769px);
 /* reset all the body margin and set backhground and padding */
-
 body {
   margin: 0;
   padding: 1.5rem;
@@ -33,6 +32,11 @@ body {
   text-align: center;
   padding: 1rem;
   list-style-type: none;
+}
+
+/* visited link colour stays white */
+a:visited {
+  color: white;
 }
 
 /* make the article container a flex container & allow wrapping for auto responsiveness */
